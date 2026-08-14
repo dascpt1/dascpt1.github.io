@@ -15,6 +15,8 @@ Served via GitHub Pages at https://dascpt1.github.io/ once pushed.
   supermarket recommendations. No financial data.
 - `spotlight.html` - members area: this week's featured grape/region/variety, plus an
   archive table of past weeks. See "Weekly spotlight" below for the update process.
+- `order.html` - members area: how to place an order, payment (general note only -
+  no account details), and where the club orders from.
 
 ## Editing
 
