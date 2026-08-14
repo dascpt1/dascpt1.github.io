@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Schedule - Our Wine Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero hero-sm">
+  <div class="wrap">
+    <p class="eyebrow">Members</p>
+    <h1>Schedule</h1>
+    <p class="tagline">Upcoming tastings and general notes.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="upcoming">
+    <h2>Upcoming tastings</h2>
+    <table class="data">
+      <thead>
+        <tr><th>Date</th><th>Host</th><th>Theme / notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Example - 12 Sep 2026</td><td>Someone's place</td><td>e.g. Rioja night</td></tr>
+        <tr><td>Example - 10 Oct 2026</td><td>Someone's place</td><td>e.g. New World reds</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Replace these example rows with the real schedule.</p>
+  </section>
+
+  <section id="notes">
+    <h2>General notes</h2>
+    <p>
+      Anything members should know on an ongoing basis - the hosting rota, what
+      to bring, how tastings are run, that kind of thing. No balances or financial
+      figures belong here - keep those in your own private tracking, not on this page.
+    </p>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>&copy; <span id="year"></span> Our Wine Club &middot; private site, not indexed</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

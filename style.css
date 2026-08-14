@@ -135,6 +135,37 @@ footer {
   font-size: 13px;
 }
 
+.hero-sm { padding: 48px 0 32px; }
+.hero-sm h1 { font-size: 32px; }
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+
+table.data th {
+  background: var(--ink);
+  color: #fff;
+  text-align: left;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+table.data td {
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  vertical-align: top;
+}
+
+table.data tr:nth-child(even) td { background: var(--light); }
+
+.note {
+  color: var(--grey);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 @media (max-width: 600px) {
   .hero { padding: 48px 0 32px; }
   .hero h1 { font-size: 32px; }
