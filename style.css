@@ -1,0 +1,141 @@
+:root {
+  --ink: #1b1e22;
+  --grey: #5b6270;
+  --line: #e3e5e9;
+  --light: #f7f8f9;
+  --accent: #2563eb;
+  --accent-dk: #1d4ed8;
+  --max: 860px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+  background: #fff;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.hero {
+  background: var(--light);
+  border-bottom: 1px solid var(--line);
+  padding: 72px 0 40px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0 0 28px;
+  color: var(--grey);
+  font-size: 17px;
+  max-width: 46ch;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 24px;
+  font-size: 14px;
+}
+
+nav a:hover { color: var(--accent); }
+
+/* Sections */
+main section {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+main section:last-child { border-bottom: none; }
+
+h2 {
+  font-size: 24px;
+  margin: 0 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.card p {
+  margin: 0 0 14px;
+  color: var(--grey);
+  font-size: 14.5px;
+}
+
+.card-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card-link:hover { color: var(--accent-dk); }
+
+#about p { color: var(--grey); max-width: 65ch; }
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.links a:hover { color: var(--accent-dk); }
+
+footer {
+  padding: 32px 24px 48px;
+  color: var(--grey);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 48px 0 32px; }
+  .hero h1 { font-size: 32px; }
+}

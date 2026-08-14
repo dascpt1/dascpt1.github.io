@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stuart Pearson</title>
+<meta name="description" content="Personal site and project portfolio.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Hi, I'm</p>
+    <h1>Stuart Pearson</h1>
+    <p class="tagline">Systems &amp; automation - PowerShell, PostgreSQL, and the occasional side project.</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <article class="card">
+        <h3>Project name</h3>
+        <p>A short description of what this project does and why you built it.</p>
+        <a class="card-link" href="#">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="card">
+        <h3>Project name</h3>
+        <p>A short description of what this project does and why you built it.</p>
+        <a class="card-link" href="#">View on GitHub &rarr;</a>
+      </article>
+
+      <article class="card">
+        <h3>Project name</h3>
+        <p>A short description of what this project does and why you built it.</p>
+        <a class="card-link" href="#">View on GitHub &rarr;</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      A paragraph or two about yourself - background, interests, what you're currently
+      working on. Keep it short; this is a portfolio, not a CV.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="links">
+      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="https://github.com/dascpt1">GitHub</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>&copy; <span id="year"></span> Stuart Pearson</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
