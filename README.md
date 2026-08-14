@@ -5,7 +5,29 @@ and `noindex` meta tags discourage search engines) but not password-protected - 
 with the exact URL can view it. **Do not add financial data, balances, or per-member
 figures to this site** - keep that in your own private spreadsheet/tracking instead.
 
-Served via GitHub Pages at https://dascpt1.github.io/ once pushed.
+Served via GitHub Pages, once pushed - custom domain **mdwcwineclub.com** (via the
+`CNAME` file), falls back to https://dascpt1.github.io/ if DNS isn't set up yet.
+Custom domain note: a memorable domain name is easier to guess/share than a random
+github.io URL, so it's slightly less obscure than before - still fine given "unlisted,
+not password-protected" was the accepted tradeoff, just worth knowing.
+
+### DNS setup (do this at your domain registrar, not here)
+
+For the apex domain to work, add four **A records** for `mdwcwineclub.com` pointing to:
+
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+Optional, if you also want `www.mdwcwineclub.com` to work: add a **CNAME record** for
+`www` pointing to `dascpt1.github.io`.
+
+DNS changes can take anywhere from a few minutes to a few hours to propagate. Once it
+resolves, GitHub automatically provisions an HTTPS certificate for the domain - no
+action needed beyond correct DNS.
 
 ## Pages
 
