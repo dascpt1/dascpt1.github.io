@@ -152,7 +152,16 @@ main li::marker {
 
 .card-link:hover { color: var(--accent-dk); }
 
-#about p { color: var(--grey); max-width: 65ch; }
+.about-bg {
+  background:
+    linear-gradient(rgba(42, 34, 32, 0.74), rgba(42, 34, 32, 0.74)),
+    url('images/about-bg.jpg') center 35% / cover no-repeat;
+  padding: 64px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.about-bg h2 { color: #fff; }
+.about-bg p { color: #f1e9e1; max-width: 65ch; }
 
 .links {
   list-style: none;
