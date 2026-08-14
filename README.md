@@ -11,19 +11,30 @@ Custom domain note: a memorable domain name is easier to guess/share than a rand
 github.io URL, so it's slightly less obscure than before - still fine given "unlisted,
 not password-protected" was the accepted tradeoff, just worth knowing.
 
-### DNS setup (do this at your domain registrar, not here)
+### DNS setup (registered through Wix, not a typical registrar)
 
-For the apex domain to work, add four **A records** for `mdwcwineclub.com` pointing to:
+The domain was bought through Wix (auto-renews yearly, currently ~£22.80/yr - manage
+that under Billing in the Wix account if it ever needs changing). DNS is *not* set
+here or in this repo - it's done in the Wix dashboard:
 
-```
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
-```
+1. **First**, confirm the domain's contact info via the separate verification email
+   Wix sends after purchase - this is an ICANN requirement; the domain can be
+   suspended if it's not confirmed within the given window. Do this before anything
+   else.
+2. In Wix: **Domains -> mdwcwineclub.com -> DNS Records** (may be under "Advanced" /
+   "Manage DNS"). Wix often pre-fills records pointing at Wix's own hosting - remove
+   or replace those, don't just add alongside them.
+3. Add four **A records** for the root (`@`) pointing to:
 
-Optional, if you also want `www.mdwcwineclub.com` to work: add a **CNAME record** for
-`www` pointing to `dascpt1.github.io`.
+   ```
+   185.199.108.153
+   185.199.109.153
+   185.199.110.153
+   185.199.111.153
+   ```
+
+4. Optional, if you also want `www.mdwcwineclub.com` to work: add a **CNAME record**
+   for `www` pointing to `dascpt1.github.io`.
 
 DNS changes can take anywhere from a few minutes to a few hours to propagate. Once it
 resolves, GitHub automatically provisions an HTTPS certificate for the domain - no
