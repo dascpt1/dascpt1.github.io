@@ -26,10 +26,11 @@ commit and push. Changes go live within a minute or two of pushing to `master`.
 Things to fill in:
 
 - About section and how-it-works cards on `index.html`
-- Contact email (currently `you@example.com`)
 - Real schedule rows on `schedule.html` (currently example placeholder rows)
 - Real tips, tasting notes and supermarket recommendations on `tips.html`
   (currently example placeholder content)
+- Real ordering steps and supplier cards on `order.html`
+- This week's first real entry on `spotlight.html`
 
 ## Weekly spotlight
 
