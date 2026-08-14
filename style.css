@@ -156,6 +156,9 @@ main li::marker {
   background:
     linear-gradient(rgba(42, 34, 32, 0.74), rgba(42, 34, 32, 0.74)),
     url('images/about-bg.jpg') center 35% / cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
   padding: 64px 0;
   border-bottom: 1px solid var(--line);
 }
