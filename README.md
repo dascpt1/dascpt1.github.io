@@ -11,6 +11,8 @@ Served via GitHub Pages at https://dascpt1.github.io/ once pushed.
 
 - `index.html` - public-facing info: about the club, how it works, how to join.
 - `schedule.html` - members area: upcoming tastings and general notes. No financial data.
+- `tips.html` - members area: serving/storage tips, a running tasting notes log, and
+  supermarket recommendations. No financial data.
 
 ## Editing
 
@@ -19,10 +21,11 @@ commit and push. Changes go live within a minute or two of pushing to `master`.
 
 Things to fill in:
 
-- Club name (currently "Our Wine Club" throughout)
 - About section and how-it-works cards on `index.html`
 - Contact email (currently `you@example.com`)
 - Real schedule rows on `schedule.html` (currently example placeholder rows)
+- Real tips, tasting notes and supermarket recommendations on `tips.html`
+  (currently example placeholder content)
 
 ## Local preview
 
