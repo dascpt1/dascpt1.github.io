@@ -13,6 +13,8 @@ Served via GitHub Pages at https://dascpt1.github.io/ once pushed.
 - `schedule.html` - members area: upcoming tastings and general notes. No financial data.
 - `tips.html` - members area: serving/storage tips, a running tasting notes log, and
   supermarket recommendations. No financial data.
+- `spotlight.html` - members area: this week's featured grape/region/variety, plus an
+  archive table of past weeks. See "Weekly spotlight" below for the update process.
 
 ## Editing
 
@@ -26,6 +28,16 @@ Things to fill in:
 - Real schedule rows on `schedule.html` (currently example placeholder rows)
 - Real tips, tasting notes and supermarket recommendations on `tips.html`
   (currently example placeholder content)
+
+## Weekly spotlight
+
+`spotlight.html` is manually updated, not automated - each week:
+
+1. Move the current "This week" block's summary into a new row at the top of the
+   "Past spotlights" table (`#archive`).
+2. Replace the "This week" heading, week-of date, and body text with the new
+   grape/region/variety.
+3. Commit and push.
 
 ## Local preview
 
