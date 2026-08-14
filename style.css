@@ -193,6 +193,32 @@ main li::marker {
 .about-bg h2 { color: #fff; }
 .about-bg p { color: #f1e9e1; max-width: 65ch; }
 
+.quote {
+  margin: 0;
+  max-width: 55ch;
+  border-left: 3px solid var(--gold);
+  padding-left: 20px;
+}
+
+.quote p {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #f1e9e1;
+  margin: 0 0 12px;
+}
+
+.quote cite {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
 .links {
   list-style: none;
   padding: 0;
