@@ -58,7 +58,6 @@ commit and push. Changes go live within a minute or two of pushing to `master`.
 
 Things to fill in:
 
-- About section and how-it-works cards on `index.html`
 - Real schedule rows on `schedule.html` (currently example placeholder rows)
 - Real tips, tasting notes and supermarket recommendations on `tips.html`
   (currently example placeholder content)
