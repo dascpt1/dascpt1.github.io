@@ -273,6 +273,47 @@ table.data tr:nth-child(even) td { background: var(--light); }
   margin-top: 10px;
 }
 
+.order-form label {
+  display: block;
+  font-weight: 600;
+  margin: 16px 0 6px;
+  font-size: 14px;
+}
+
+.order-form label:first-of-type { margin-top: 0; }
+
+.order-form input[type="text"],
+.order-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+}
+
+.order-form input[type="text"]:focus,
+.order-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.order-form button {
+  margin-top: 18px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 14.5px;
+  cursor: pointer;
+  transition: background .15s ease;
+}
+
+.order-form button:hover { background: var(--accent-dk); }
+
 @media (max-width: 600px) {
   .hero-icon { margin-top: 28px; }
   .hero { padding-bottom: 32px; }

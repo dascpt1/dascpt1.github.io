@@ -44,6 +44,27 @@
     <p class="note">Replace these with the club's actual ordering steps.</p>
   </section>
 
+  <section id="order-form">
+    <h2>Order form</h2>
+    <p>
+      Fill this in and it'll open an email to
+      <a href="mailto:mdwc@btinternet.com">mdwc@btinternet.com</a> with your order
+      ready to send - nothing is submitted from this page itself.
+    </p>
+    <form class="order-form" id="orderForm">
+      <label for="of-name">Your name</label>
+      <input type="text" id="of-name" name="name" required>
+
+      <label for="of-order">What you'd like to order</label>
+      <textarea id="of-order" name="order" rows="4" required placeholder="e.g. 2x Corpinnat L'Infinit Brut Nature, 1x Lazuli 2021"></textarea>
+
+      <label for="of-notes">Any notes (optional)</label>
+      <textarea id="of-notes" name="notes" rows="3"></textarea>
+
+      <button type="submit">Email this order</button>
+    </form>
+  </section>
+
   <section id="payment">
     <h2>Payment</h2>
     <p>
@@ -77,6 +98,16 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('orderForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('of-name').value.trim();
+    var order = document.getElementById('of-order').value.trim();
+    var notes = document.getElementById('of-notes').value.trim();
+    var subject = 'Wine order from ' + name;
+    var body = 'Order:\n' + order + (notes ? '\n\nNotes:\n' + notes : '');
+    window.location.href = 'mailto:mdwc@btinternet.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
 </script>
 
 </body>
