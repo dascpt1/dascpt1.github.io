@@ -46,8 +46,8 @@ action needed beyond correct DNS.
 - `schedule.html` - members area: upcoming tastings and general notes. No financial data.
 - `tips.html` - members area: serving/storage tips, a running tasting notes log, and
   supermarket recommendations. No financial data.
-- `spotlight.html` - members area: this week's featured grape/region/variety, plus an
-  archive table of past weeks. See "Weekly spotlight" below for the update process.
+- `spotlight.html` - members area: this month's featured wines (several at once), plus
+  an archive table of past months. See "Monthly spotlight" below for the update process.
 - `order.html` - members area: how to place an order, payment (general note only -
   no account details), and where the club orders from.
 
@@ -62,16 +62,15 @@ Things to fill in:
 - Real tips, tasting notes and supermarket recommendations on `tips.html`
   (currently example placeholder content)
 - Real ordering steps and supplier cards on `order.html`
-- This week's first real entry on `spotlight.html`
 
-## Weekly spotlight
+## Monthly spotlight
 
-`spotlight.html` is manually updated, not automated - each week:
+`spotlight.html` is manually updated, not automated - each month:
 
-1. Move the current "This week" block's summary into a new row at the top of the
-   "Past spotlights" table (`#archive`).
-2. Replace the "This week" heading, week-of date, and body text with the new
-   grape/region/variety.
+1. Move each of the current month's wine cards into a new row (one row per wine) at
+   the top of the "Past spotlights" table (`#archive`), summarizing each in one line.
+2. Replace the month heading and the wine cards in `#current` with the new month's
+   picks - as many as you like.
 3. Commit and push.
 
 ## Local preview
