@@ -179,6 +179,21 @@ main li::marker {
 
 .card-link:hover { color: var(--accent-dk); }
 
+/* Time-limited supplier offer (spotlight page) */
+.offer {
+  margin-top: 32px;
+  padding: 32px 28px !important;
+  background: var(--light);
+  border: 1px solid var(--line) !important;
+  border-left: 5px solid var(--accent) !important;
+  border-radius: 8px;
+}
+
+.offer .eyebrow { color: var(--accent); margin: 0 0 6px; }
+.offer > p { max-width: 70ch; }
+.offer .card { border-top-color: var(--accent); }
+.offer .card strong { color: var(--accent); }
+
 .about-bg {
   background:
     linear-gradient(rgba(42, 34, 32, 0.74), rgba(42, 34, 32, 0.74)),
