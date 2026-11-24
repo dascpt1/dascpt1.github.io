@@ -48,6 +48,8 @@ action needed beyond correct DNS.
   supermarket recommendations. No financial data.
 - `spotlight.html` - members area: this month's featured wines (several at once), plus
   an archive table of past months. See "Monthly spotlight" below for the update process.
+- `bubbles.html` - members area: Champagne and sparkling wine picks (currently a
+  summary of a supermarket own-label Champagne taste test, with NI availability notes).
 - `order.html` - members area: how to place an order, payment (general note only -
   no account details), and where the club orders from.
 
